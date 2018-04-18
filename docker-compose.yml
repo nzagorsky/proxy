@@ -1,0 +1,13 @@
+version: '2'
+
+services:
+  proxy:
+    image: nzagorsky/proxy
+    container_name: proxy
+    ports:
+        - "1080:1080"
+    restart: always
+    environment:
+        PROXY_USER: user
+        PROXY_PASSWORD: p@ssw0rd
+
